@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Clicker Frenzy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="authScreen">
+    <div class="authBox">
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+
+        <button id="loginBtn" class="mainBtn">Login</button>
+        <button id="signupBtn" class="altBtn">Sign Up</button>
+
+        <p id="authMessage"></p>
+    </div>
+</div>
+
+<div id="gameUI" style="display:none;">
+    <div id="statsBar">
+        Clicks: <span id="clicks">0</span> 
+        || 
+        Multiplier: <span id="multiplier">1</span>x
+    </div>
+
+    <div id="mainContainer">
+        <div id="gameBox">
+            <div id="ball"></div>
+        </div>
+
+        <div id="chatBox">
+            <div id="messages"></div>
+            <div id="chatInputArea">
+                <input type="text" id="chatInput" placeholder="Type message...">
+                <button id="sendBtn">Send</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>
